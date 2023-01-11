@@ -53,4 +53,8 @@ Input Data:
 * Packages 
   * Juicer Website:https://aidenlab.org/documentation.html
   * Juicer Github: https://github.com/aidenlab/juicer
+  * BWA :  http://bio-bwa.sourceforge.net/
+  * Hi-C Pro : https://github.com/nservant/HiC-Pro
 * Related publications
+  * Hi-C Pro Servant N., Varoquaux N., Lajoie BR., Viara E., Chen CJ., Vert JP., Dekker J., Heard E., Barillot E. HiC-Pro: An optimized and flexible pipeline for Hi-C processing. Genome Biology 2015, 16:259 doi:10.1186/s13059-015-0831-x
+  * 
