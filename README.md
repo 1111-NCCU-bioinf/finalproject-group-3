@@ -1,7 +1,7 @@
 # TADs are 3D structural units of higher-order chromosome organization in Drosophila
 ## Members
 * 劉育佑, 111753145
-* 翁佑祥, 111753226
+* 翁祐祥, 111753226
 * 周庭威, 111753223
 * 張禎尹, 111753136
 
@@ -73,6 +73,31 @@ Input Data:
 ### code
 * Packages we use 
   * HiC Explorer
+    * python >= 3.6
+    * numpy >= 1.19.*
+    * scipy >= 1.5.*
+    * matplotlib-base >= 3.1.*
+    * ipykernel >= 5.3.0
+    * pysam >= 0.16.*
+    * intervaltree >= 3.1.*
+    * biopython
+    * pytables >= 3.6.*
+    * pandas >= 1.1.*
+    * pybigwig >= 0.3.*
+    * jinja2 >= 2.11
+    * unidecode >= 1.1.*
+    * hicmatrix >= 15
+    * hic2cool >= 0.8.3
+    * psutil >= 5.7.*
+    * pygenometracks >= 3.5
+    * fit_nbinom >= 1.1
+    * cooler >= 0.8.10
+    * krbalancing >= 0.0.5 (Needs the library eigen; openmp is recommended for linux users. No openmp support on macOS.)
+    * pybedtools >= 0.8.*
+    * future >= 0.18
+    * tqdm >= 4.50
+    * hyperopt >= 0.2.4
+    * python-graphviz >= 0.14
   * HiC Pro
     * Python2.7
     * hicpro
