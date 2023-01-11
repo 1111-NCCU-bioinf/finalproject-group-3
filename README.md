@@ -1,11 +1,12 @@
 # Title of your paper
 ### Members
-* name, student ID1
-* name, student ID2
-* name, student ID3
-* ...
+* 劉育佑, 111753145
+* 翁佑祥, 111753226
+* 周庭威, 111753223
+* 張禎尹, 111753136
 
 ### Demo 
+
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
 ```R
 Rscript code/your_script.R --input data/training --output results/performance.tsv
