@@ -33,13 +33,16 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 ### data
 Input Data:
 * Source:NCBI GSE99107 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99107
-* Format:.sra/.FASTQ/.FASTA/.gz
-* Size:
+* Format: .sra/.FASTQ/.FASTA/.gz
+* Size: about 1 TB
 
 ### code
-* Which packages do you use? 
-  * original packages in the paper
-  * additional packages you found
+* Packages we use 
+  * HiC Explorer
+  * HiC Pro
+    *
+  * Juicer
+  * JuiceBox
 * Analysis steps
 
 ### results
