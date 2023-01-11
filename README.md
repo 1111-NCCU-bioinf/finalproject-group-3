@@ -9,6 +9,7 @@
 
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
 
+Juicer Launch Instruction
 ```
 bash scripts/juicer.sh  -d <path/opt> \
 -D <path/opt> \
