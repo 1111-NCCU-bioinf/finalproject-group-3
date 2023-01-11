@@ -1,4 +1,4 @@
-# Title of your paper
+# TADs are 3D structural units of higher-order chromosome organization in Drosophila
 ### Members
 * 劉育佑, 111753145
 * 翁佑祥, 111753226
@@ -7,7 +7,6 @@
 
 ### Demo 
 
-You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
 
 Juicer Launch Instruction
 ```
@@ -32,9 +31,10 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
   * i.e., software user guide
 
 ### data
-* Source
-* Format
-* Size
+Input Data:
+* Source:NCBI GSE99107 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99107
+* Format:.sra/.FASTQ/.FASTA/.gz
+* Size:
 
 ### code
 * Which packages do you use? 
@@ -47,5 +47,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 * Any improvement or change by your package?
 
 ## References
-* Packages you use
+* Packages 
+  * Juicer Website:https://aidenlab.org/documentation.html
+  * Juicer Github: https://github.com/aidenlab/juicer
 * Related publications
