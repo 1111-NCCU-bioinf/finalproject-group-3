@@ -7,6 +7,33 @@
 
 ## Demo 
 
+Juicer Full Instruction
+```
+mkdir ./opt 
+cd opt
+git clone https://github.com/theaidenlab/juicer.git
+ln -s juicer/CPU scripts
+cd scripts/common
+wget http://hicfiles.tc4ga.com.s3.amazonaws.com/public/juicer/juicer_tools.1.7.6_jcuda.0.8.jar
+ln -s juicer_tools.1.7.6_jcuda.0.8.jar juicer_tools.jar
+cd ../..
+mkdir references
+cd references 
+cp <path>/Homo_sapiens_assembly38.fasta  
+bwa index  Homo_sapiens_assembly38.fasta
+cd ..
+mkdir restriction_sites
+cd restriction_sites/
+python2 ../juicer/misc/generate_site_positions.py  MboI  hg38_MboI ../references/Homo_sapiens_assembly38.fasta # 生成了 hg38_MboI.txt 文件
+awk 'BEGIN{OFS="\t"}{print $1, $NF}' hg38_MboI.txt > hg38.chrom.sizes
+cd ..
+mkdir fastq && cd fastq  #Test_fasta
+nohup wget http://juicerawsmirror.s3.amazonaws.com/opt/juicer/work/HIC003/fastq/HIC003_S2_L001_R1_001.fastq.gz &
+nohup wget http://juicerawsmirror.s3.amazonaws.com/opt/juicer/work/HIC003/fastq/HIC003_S2_L001_R2_001.fastq.gz &
+cd ..
+# Run Juicer
+bash scripts/juicer.sh  -d <path/opt>  -D <path/opt> -y restriction_sites/hg38_MboI.txt  -z references/Homo_sapiens_assembly38.fasta -p restriction_sites/hg38.chrom.sizes -s MboI 
+```
 
 Juicer Launch Instruction
 ```
@@ -18,6 +45,13 @@ bash scripts/juicer.sh  -d <path/opt> \
 -s MboI 
 ```
 
+
+HiC PRo Launch Instruction
+```
+HiC-Pro -c config-hicpro.txt -i [rawdata directory] -o [output file directory]
+```
+
+
 ```R
 Rscript code/your_script.R --input data/training --output results/performance.tsv
 ```
@@ -26,7 +60,7 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Projects.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424) PLoS Comput Biol 5(7): e1000424.
 
 ### docs
-* Your presentation, 1112_bioinformatics_FP_studentID.ppt/pptx/pdf (i.e.,1112_bioinformatics_FP_556688.ppt), by **01.12**
+* Presentation powerpoint , 1112_bioinformatics_FP_studentID.ppt/pptx/pdf (i.e.,1112_bioinformatics_FP_556688.ppt), by **01.12**
 * Any related document for the project
   * i.e., software user guide
 
@@ -40,7 +74,18 @@ Input Data:
 * Packages we use 
   * HiC Explorer
   * HiC Pro
-    *
+    * Python2.7
+    * hicpro
+    * samtools
+    * bowtie2 
+    * R
+    * pysam 
+    * bx-python 
+    * numpy 
+    * scipy 
+    * ggplot2(R)
+    * RColorBrewer(R)
+
   * Juicer
   * JuiceBox
 * Analysis steps
