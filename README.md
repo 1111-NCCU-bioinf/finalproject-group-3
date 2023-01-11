@@ -19,20 +19,20 @@ ln -s juicer_tools.1.7.6_jcuda.0.8.jar juicer_tools.jar
 cd ../..
 mkdir references
 cd references 
-cp <path>/Homo_sapiens_assembly38.fasta  
-bwa index  Homo_sapiens_assembly38.fasta
+cp <path>/[Reference Fasta File Name].fasta  
+bwa index  [Reference Fasta File Name].fasta
 cd ..
 mkdir restriction_sites
 cd restriction_sites/
-python2 ../juicer/misc/generate_site_positions.py  MboI  hg38_MboI ../references/Homo_sapiens_assembly38.fasta # 生成了 hg38_MboI.txt 文件
-awk 'BEGIN{OFS="\t"}{print $1, $NF}' hg38_MboI.txt > hg38.chrom.sizes
+python2 ../juicer/misc/generate_site_positions.py  MboI  hg38_MboI ../references/[Reference Fasta File Name].fasta 
+awk 'BEGIN{OFS="\t"}{print $1, $NF}' [Restriction_site_file_name].txt > [Restriction_site_file_name].chrom.sizes
 cd ..
-mkdir fastq && cd fastq  #Test_fasta
+mkdir fastq && cd fastq  #Get_Test_fasta
 nohup wget http://juicerawsmirror.s3.amazonaws.com/opt/juicer/work/HIC003/fastq/HIC003_S2_L001_R1_001.fastq.gz &
 nohup wget http://juicerawsmirror.s3.amazonaws.com/opt/juicer/work/HIC003/fastq/HIC003_S2_L001_R2_001.fastq.gz &
 cd ..
 # Run Juicer
-bash scripts/juicer.sh  -d <path/opt>  -D <path/opt> -y restriction_sites/hg38_MboI.txt  -z references/Homo_sapiens_assembly38.fasta -p restriction_sites/hg38.chrom.sizes -s MboI 
+bash scripts/juicer.sh  -d <path/opt>  -D <path/opt> -y restriction_sites/hg38_MboI.txt  -z references/Homo_sapiens_assembly38.fasta -p restriction_sites/[Restriction_site_file_name].chrom.sizes -s MboI 
 ```
 
 Juicer Launch Instruction
