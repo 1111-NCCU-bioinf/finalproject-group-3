@@ -1,0 +1,18 @@
+##repair sequences
+$ repair.sh in=SRR5579177_1.fastq.gz in2=SRR5579177_2.fastq.gz out=SRR5579177_1_rep.fastq.gz out2=SRR5579177_2_rep.fastq.gz outs=single.fq
+##build index by reference
+$ bwa index ref/ref.fa
+##建立共同sam
+$ bwa mem ref/ref.fa SRR5579177_1_rep.fastq.gz SRR5579177_2_rep.fastq.gz > alignment/SRR5579177.sam
+##建立個別sam
+$ bwa mem ref/ref.fa SRR5579177_1_rep.fastq.gz > alignment/SRR5579177_1.sam
+$ bwa mem ref/ref.fa SRR5579177_2_rep.fastq.gz > alignment/SRR5579177_2.sam
+## build matrix(not try)
+$ hicBuildMatrix -s forward.sam reverse.sam -o multi_resolution.cool
+  --binSize 10000 20000 50000 100000 --QCfolder QC
+## plot heat map(not try)
+$ hicPlotMatrix -m Dmel.h5 -o hicPlotMatrix.png \
+-t 'D.melanogaster (--perChromosome)' --log1p \
+--clearMaskedBins --chromosomeOrder 2L 2R 3L 3R X --perChromosome
+
+
