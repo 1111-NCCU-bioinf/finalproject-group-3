@@ -8,6 +8,16 @@
 ### Demo 
 
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
+
+```
+bash scripts/juicer.sh  -d <path/opt> \
+-D <path/opt> \
+-y restriction_sites/hg38_MboI.txt  \
+-z references/Homo_sapiens_assembly38.fasta \
+-p restriction_sites/hg38.chrom.sizes \
+-s MboI 
+```
+
 ```R
 Rscript code/your_script.R --input data/training --output results/performance.tsv
 ```
