@@ -69,7 +69,9 @@ Input Data:
 * Source:NCBI GSE99107 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99107
 * Format: .sra/.FASTQ/.FASTA/.gz
 * Size: about 1 TB
-
+Reference Data:
+* Source : https://www.ncbi.nlm.nih.gov/genome?term=vih&cmd=DetailsSearch
+* Size : 23.8 MB
 ### code
 * Packages we use 
   * HiC Explorer
