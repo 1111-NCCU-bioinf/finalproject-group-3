@@ -116,6 +116,8 @@ Reference Data:
     * BWA
   * JuiceBox
 * Analysis steps
+  * Juicer : Install -> Process File -> Run -> Visualization
+  * HiC Pro : Install -> Edit Config -> Run
 
 ### results
 * Which part of the paper do you reproduce?
