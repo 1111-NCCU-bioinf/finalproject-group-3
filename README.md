@@ -52,9 +52,7 @@ HiC-Pro -c config-hicpro.txt -i [rawdata directory] -o [output file directory]
 ```
 
 
-```R
-Rscript code/your_script.R --input data/training --output results/performance.tsv
-```
+
 
 ## Folder organization and its related information
 idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Projects.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424) PLoS Comput Biol 5(7): e1000424.
@@ -69,6 +67,7 @@ Input Data:
 * Source:NCBI GSE99107 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99107
 * Format: .sra/.FASTQ/.FASTA/.gz
 * Size: about 1 TB
+
 Reference Data:
 * Source : https://www.ncbi.nlm.nih.gov/genome?term=vih&cmd=DetailsSearch
 * Size : 23.8 MB
@@ -114,6 +113,8 @@ Reference Data:
     * RColorBrewer(R)
 
   * Juicer
+    * Java
+    * BWA
   * JuiceBox
 * Analysis steps
 
