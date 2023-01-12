@@ -128,7 +128,7 @@ Reference Data:
   * Juicer Github: https://github.com/aidenlab/juicer
   * BWA:  http://bio-bwa.sourceforge.net/
   * Hi-C Pro: https://github.com/nservant/HiC-Pro
-  * HiCExplorer: https://siwaa.toulouse.inrae.fr/training-material/topics/epigenetics/tutorials/hicexplorer/tutorial.html
+  * HiCExplorer: https://hicexplorer.readthedocs.io/en/latest/index.html#
 * Related publications
   * Hi-C Pro Servant N., Varoquaux N., Lajoie BR., Viara E., Chen CJ., Vert JP., Dekker J., Heard E., Barillot E. HiC-Pro: An optimized and flexible pipeline for Hi-C processing. Genome Biology 2015, 16:259 doi:10.1186/s13059-015-0831-x
-  * 
+  * Hi-C analysis of Drosophila melanogaster cells using HiCExplorer J Wolff, F Ramirez, V Bhardwaj, E Polkh - 2022 - siwaa.toulouse.inrae.fr
