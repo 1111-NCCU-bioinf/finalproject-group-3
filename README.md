@@ -59,8 +59,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 
 ### docs
 * Presentation powerpoint , Group3_final.pptx
-* Any related document for the project
-  * i.e., software user guide
+
 
 ### data
 Input Data:
@@ -120,6 +119,7 @@ Reference Data:
 
 ### results
 * Which part of the paper do you reproduce?
+  * Hi-C Analysis Part
 * Any improvement or change by your package?
 
 ## References
