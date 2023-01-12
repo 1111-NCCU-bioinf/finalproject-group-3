@@ -58,7 +58,7 @@ HiC-Pro -c config-hicpro.txt -i [rawdata directory] -o [output file directory]
 idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Projects.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424) PLoS Comput Biol 5(7): e1000424.
 
 ### docs
-* Presentation powerpoint , Group3_final 
+* Presentation powerpoint , Group3_final.pptx
 * Any related document for the project
   * i.e., software user guide
 
